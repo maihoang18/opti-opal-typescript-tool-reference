@@ -57,7 +57,7 @@ const toolsService = new ToolsService(app);
 class WeatherTools {
 
   @tool({
-    name: 'get_weather',
+    name: 'get_weather_tp',
     description: 'Gets current weather for a location based on City name, State code, and Country code.',
     parameters: [
       {
@@ -86,7 +86,7 @@ class WeatherTools {
       }
     ]
   })
-  async getWeather(parameters: WeatherParameters): Promise<WeatherResponse> {
+  async getWeather_tp(parameters: WeatherParameters): Promise<WeatherResponse> {
     try {
       const { city, state, country, units = '' } = parameters;
 
