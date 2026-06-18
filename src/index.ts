@@ -124,11 +124,4 @@ class WeatherTools {
 // Discovery endpoint is automatically created at /discovery by ToolsService
 // Tool execution endpoints are automatically created by ToolsService
 
-// Start the server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Opal Tools service running on port ${PORT}`);
-  console.log(`Discovery endpoint automatically available at http://localhost:${PORT}/discovery`);
-});
-
 export default app;
